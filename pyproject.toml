@@ -1,0 +1,29 @@
+[project]
+name = "django-auto-model-loader"
+version = "1.0"
+description = "Middleware for auto-loading Django models from URL parameters"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "Dennis Tverdostup", email = "denystverdostup@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "Django>=1.8",
+    "inflection>=0.5.1"
+]
+requires-python = ">=2.7"
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+keywords = ["django", "autoload", "models", "model"]
+
+[project.urls]
+Repository = "https://github.com/Volbeck/django_auto_model_loader"
+Issues = "https://github.com/Volbeck/django_auto_model_loader/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
