@@ -1,2 +1,5 @@
 ﻿.idea
 **/pycache/% 
+**.egg-info
+dist
+build
