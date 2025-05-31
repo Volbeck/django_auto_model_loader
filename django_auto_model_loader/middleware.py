@@ -42,6 +42,6 @@ class AutoModelLoaderMiddleware(MiddlewareMixin):
             if not model_class:
                 continue
 
-            setattr(request, alias, SimpleLazyObject( lambda: model_class.objects.filter(pk=pk).first() ))
+            setattr(request, alias, SimpleLazyObject(lambda mc=model_class, pk_=pk: mc.objects.filter(pk=pk_).first()) )
 
         return None
