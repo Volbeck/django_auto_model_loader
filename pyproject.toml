@@ -1,6 +1,6 @@
 [project]
 name = "django-auto-model-loader"
-version = "1.0"
+version = "1.0.1"
 description = "Middleware for auto-loading Django models from URL parameters"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
